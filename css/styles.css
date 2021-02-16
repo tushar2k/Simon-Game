@@ -3,6 +3,18 @@ body {
   background-color: #011F3F;
 }
 
+footer{
+  color: #ffffff;
+  font-family: 'Press Start 2P', sans-serif;
+}
+a{
+  color: #ffffff;
+  text-decoration: none;
+}
+a:hover{
+  font-weight: bold;
+}
+
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
@@ -13,8 +25,9 @@ body {
 #restart-key {
   font-family: 'Press Start 2P', cursive;
   font-size: 2rem;
-  margin: 5%;
+  margin: 1.5% auto;
   color: #FEF2BF;
+  margin-bottom: 2%;
 }
 
 .restart-btn {
@@ -63,12 +76,10 @@ body {
 
 .blue {
   background-color: blue;
-  margin-bottom: 1px;
 }
 
 .yellow {
   background-color: yellow;
-  margin-bottom: 1px;
 }
 
 .pressed {
