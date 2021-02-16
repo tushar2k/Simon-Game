@@ -6,15 +6,37 @@ body {
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
-  margin:  5%;
+  margin: 5%;
   color: #FEF2BF;
+}
+
+#restart-key {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  margin: 5%;
+  color: #FEF2BF;
+}
+
+.restart-btn {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.9rem;
+  margin: 0;
+  color: #FEF2BF;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+.restart-btn:focus {
+  border: none;
+  outline:none;
 }
 
 .container {
   display: block;
   width: 50%;
   margin: auto;
-
 }
 
 .btn {
@@ -41,13 +63,19 @@ body {
 
 .blue {
   background-color: blue;
+  margin-bottom: 1px;
 }
 
 .yellow {
   background-color: yellow;
+  margin-bottom: 1px;
 }
 
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+
+.hidden{
+  visibility: hidden;
 }

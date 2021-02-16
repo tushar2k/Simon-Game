@@ -23,14 +23,22 @@ $('.btn').click(function() {
 
 $(document).keypress(function() {
   if (started === false) {
-    started = true;
-    $('#level-title').html('Level ' + level.toString());
-    setTimeout(function() {
-      nextSequence();
-    }, 500);
+    start();
   }
 });
 
+$('.restart-btn').click(function(){
+  start();
+});
+
+function start(){
+  started = true;
+  $('.restart-btn').addClass('hidden');
+  $('#level-title').html('Level ' + level.toString());
+  setTimeout(function() {
+    nextSequence();
+  }, 500);
+}
 
 function checkPress(userChosenColour) {
   // console.log(userChosenColour);
@@ -75,6 +83,7 @@ function startOver() {
   level = 0;
   started = false;
   k = 0;
+  $('.restart-btn').removeClass('hidden');
 }
 
 function animatePress(name) {
